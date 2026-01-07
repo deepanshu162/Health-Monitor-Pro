@@ -1,53 +1,186 @@
-🩺 Health Monitor Pro
 
-Health Monitor Pro is a Python-based desktop application built using Tkinter that helps users track, analyze, and predict health metrics such as Blood Pressure and Blood Sugar.
-It supports secure user authentication, data visualization, PDF report generation, and basic machine-learning-based predictions.
+<body>
 
-✨ Features
-🔐 User Authentication
+<h1>🩺 Health Monitor Pro</h1>
 
-Secure Login & Registration
+<p>
+<strong>Health Monitor Pro</strong> is a <strong>Python-based desktop application</strong>
+built using <strong>Tkinter</strong> that helps users
+<strong>track, analyze, and predict health metrics</strong> such as
+<strong>Blood Pressure</strong> and <strong>Blood Sugar</strong>.
+</p>
 
-Passwords stored using SHA-256 hashing
+<p>
+The system includes <strong>secure authentication</strong>,
+<strong>data visualization</strong>, <strong>PDF report generation</strong>,
+and <strong>machine-learning-based predictions</strong>.
+</p>
 
-User profile details (age, gender, diabetes type)
+<h2>✨ Features</h2>
 
-❤️ Blood Pressure Monitoring
+<h3>🔐 User Authentication</h3>
+<ul>
+    <li>Secure Login & Registration</li>
+    <li>SHA-256 password hashing</li>
+    <li>User profile management (age, gender, diabetes type)</li>
+</ul>
 
-Record systolic & diastolic readings
+<h3>❤️ Blood Pressure Monitoring</h3>
+<ul>
+    <li>Record systolic and diastolic readings</li>
+    <li>View complete history</li>
+    <li>Generate PDF reports</li>
+    <li>Trend visualization</li>
+    <li>7-day prediction using Linear Regression</li>
+</ul>
 
-View complete history
+<h3>🍬 Blood Sugar Monitoring</h3>
+<ul>
+    <li>Track glucose levels with meal context</li>
+    <li>Diabetes-aware interpretation</li>
+    <li>Trend visualization</li>
+    <li>PDF report generation</li>
+    <li>7-day glucose prediction</li>
+</ul>
 
-Generate PDF health reports
+<h3>📊 Health Summary Dashboard</h3>
+<ul>
+    <li>Latest BP and BS readings</li>
+    <li>Status classification (Normal, Elevated, Hypertension, etc.)</li>
+    <li>Graphical trends</li>
+</ul>
 
-Visualize trends using graphs
+<h3>🤖 Prediction Engine</h3>
+<ul>
+    <li>Uses Scikit-Learn Linear Regression</li>
+    <li>Graph-based prediction output</li>
+    <li>Model evaluation metrics support</li>
+</ul>
 
-7-day prediction using Linear Regression
+<h2>🛠️ Tech Stack</h2>
 
-🍬 Blood Sugar Monitoring
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Technology</th>
+    </tr>
+    <tr>
+        <td>Programming Language</td>
+        <td>Python 3</td>
+    </tr>
+    <tr>
+        <td>GUI</td>
+        <td>Tkinter (ttk)</td>
+    </tr>
+    <tr>
+        <td>Database</td>
+        <td>SQLite</td>
+    </tr>
+    <tr>
+        <td>Visualization</td>
+        <td>Matplotlib</td>
+    </tr>
+    <tr>
+        <td>Data Handling</td>
+        <td>Pandas</td>
+    </tr>
+    <tr>
+        <td>Machine Learning</td>
+        <td>Scikit-Learn</td>
+    </tr>
+    <tr>
+        <td>Reports</td>
+        <td>FPDF</td>
+    </tr>
+    <tr>
+        <td>Images</td>
+        <td>Pillow (PIL)</td>
+    </tr>
+</table>
 
-Record glucose levels with context (fasting, post-meal, etc.)
+<h2>📂 Project Structure</h2>
 
-Diabetes-aware interpretation
+<pre>
+Health-Monitor-Pro/
+│
+├── main.py
+├── auth_module.py
+├── bp_module.py
+├── bs_module.py
+├── predict_module.py
+├── generate_test_data.py
+├── health_monitor.db
+│
+├── assets/
+│   ├── health_logo.png
+│   ├── auth_bg.jpg
+│   ├── bp_icon.png
+│   └── bs_icon.png
+│
+└── README.md
+</pre>
 
-Trend visualization
+<h2>⚙️ Installation & Setup</h2>
 
-PDF report generation
+<h3>1️⃣ Clone the Repository</h3>
+<pre>
+git clone https://github.com/your-username/health-monitor-pro.git
+cd health-monitor-pro
+</pre>
 
-7-day glucose prediction
+<h3>2️⃣ Install Required Libraries</h3>
+<pre>
+pip install pandas matplotlib scikit-learn pillow fpdf
+</pre>
 
-📊 Health Summary Dashboard
+<p><em>Note: Tkinter is included by default with Python.</em></p>
 
-Latest BP & BS status
+<h3>3️⃣ (Optional) Generate Sample Data</h3>
+<pre>
+python generate_test_data.py
+</pre>
 
-Automatic classification (Normal, Elevated, Hypertension, etc.)
+<h3>4️⃣ Run the Application</h3>
+<pre>
+python main.py
+</pre>
 
-Trend visualization
+<h2>📈 Prediction Logic</h2>
+<ul>
+    <li>Uses Linear Regression</li>
+    <li>Requires at least 3 readings</li>
+    <li>Predicts future health trends</li>
+    <li>Provides table and graph views</li>
+</ul>
 
-🤖 Prediction Engine
+<h2>📄 Reports</h2>
+<ul>
+    <li>Auto-generated PDF reports</li>
+    <li>Summary statistics</li>
+    <li>Color-coded health indicators</li>
+    <li>Recent readings table</li>
+</ul>
 
-Uses Scikit-Learn Linear Regression
+<h2>🔒 Security</h2>
+<ul>
+    <li>SHA-256 password hashing</li>
+    <li>User-specific data access</li>
+    <li>SQLite relational integrity</li>
+</ul>
 
-Graphical prediction output
+<h2>🚀 Future Enhancements</h2>
+<ul>
+    <li>Cloud backup and sync</li>
+    <li>Mobile & Web versions</li>
+    <li>Advanced ML models (LSTM)</li>
+    <li>Doctor sharing and alerts</li>
+</ul>
 
-Model evaluation support (MAE, RMSE, R²)
+<footer>
+    <p><strong>Author:</strong> Deepanshu Gupta</p>
+    <p>Computer Science Student | Python | Data Analysis | Desktop Applications</p>
+    
+</footer>
+
+</body>
+</html>
