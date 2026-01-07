@@ -140,6 +140,64 @@ pip install pandas matplotlib scikit-learn pillow fpdf
 python generate_test_data.py
 </pre>
 
+<h2>🧪 Sample Login Credentials</h2>
+
+<p>
+The following <strong>sample user accounts</strong> are provided for testing and demonstration purposes.
+These accounts are automatically created when running the sample data generator.
+</p>
+
+<table>
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Diabetes Type</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+    <tr>
+        <td>john_doe</td>
+        <td>password123</td>
+        <td>Type 2 Diabetes</td>
+        <td>45</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>jane_smith</td>
+        <td>securepass</td>
+        <td>Type 1 Diabetes</td>
+        <td>32</td>
+        <td>Female</td>
+    </tr>
+    <tr>
+        <td>mike_johnson</td>
+        <td>test1234</td>
+        <td>Prediabetes</td>
+        <td>58</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>sarah_williams</td>
+        <td>health123</td>
+        <td>Gestational Diabetes</td>
+        <td>29</td>
+        <td>Female</td>
+    </tr>
+    <tr>
+        <td>david_brown</td>
+        <td>demo123</td>
+        <td>No Diabetes</td>
+        <td>50</td>
+        <td>Male</td>
+    </tr>
+</table>
+
+<p>
+<strong>Note:</strong> These credentials are for <em>testing and academic demonstration only</em>.
+Do not use them in a production environment.
+</p>
+
+
 <h3>4️⃣ Run the Application</h3>
 <pre>
 python main.py
